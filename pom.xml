@@ -138,16 +138,16 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-            <plugin>
+           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>${maven-pmd-plugin.version}</version>
                 <dependencies>
-                    <!-- <dependency>
-                        <groupId>org.kathirmunai.pmd</groupId>
+                    <dependency>
+                        <groupId>com.kathirmunai.pmd</groupId>
                         <artifactId>custom-pmd</artifactId>
                         <version>${custom-pmd.version}</version>
-                    </dependency> -->
+                    </dependency>
                 </dependencies>
                 <configuration>
                     <failurePriority>5</failurePriority>
@@ -195,12 +195,12 @@
                     </execution>
                 </executions>
             </plugin>
-           <!-- <plugin>
+           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>
                 <version>${maven-install-plugin.version}</version>
                 <configuration>
-                    <groupId>org.kathimunai.pmd</groupId>
+                    <groupId>com.kathirmunai.pmd</groupId>
                     <artifactId>custom-pmd</artifactId>
                     <version>${custom-pmd.version}</version>
                     <packaging>jar</packaging>
@@ -216,7 +216,7 @@
                         <phase>validate</phase>
                     </execution>
                 </executions>
-            </plugin> -->
+            </plugin>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${maven-war-plugin.version}</version>
